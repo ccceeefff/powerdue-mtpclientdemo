@@ -10,8 +10,8 @@
 
 #define CLOCK_GPIO_OUT 51
 
-#define WIFI_SSID "PowerDue"
-#define WIFI_PASS "powerdue"
+#define WIFI_SSID ""
+#define WIFI_PASS ""
 
 #define MTP_PORT 12345
 
