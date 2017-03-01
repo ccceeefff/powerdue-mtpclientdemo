@@ -23,3 +23,9 @@ float mtp_to_float(mtp_t *t){
   n = n + ((float)t->frac / (float)(ULONG_MAX));
   return n;
 }
+
+double mtp_to_number(mtp_t *t){
+  double n = t->tod;
+  n = n + ((double)t->frac / (double)(ULONG_MAX));
+  return n;
+}

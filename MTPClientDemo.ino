@@ -50,10 +50,10 @@ void mtp_get_time(mtp_t *t){
 }
 
 void mtp_compute(mtp_t *t0, mtp_t *t1, mtp_t *t2, mtp_t *t3){
-  float f0 = mtp_to_float(t0);
-  float f1 = mtp_to_float(t1);
-  float f2 = mtp_to_float(t2);
-  float f3 = mtp_to_float(t3);
+  double f0 = mtp_to_number(t0);
+  double f1 = mtp_to_number(t1);
+  double f2 = mtp_to_number(t2);
+  double f3 = mtp_to_number(t3);
 
   SerialUSB.print("t0: ");
   SerialUSB.print(f0);

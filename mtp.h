@@ -19,6 +19,10 @@ void mtp_time_to_buffer(mtp_t *t, uint8_t *store);
 void mtp_buffer_to_time(uint8_t *store, mtp_t *t);
 
 /* Converts an mtp_t struct to a floating point representation */
+/* Deprecated. Use mtp_to_number instead. */
 float mtp_to_float(mtp_t *t);
+
+/* Converts an mtp_t struct to a double precision floating point representation */
+double mtp_to_number(mtp_t *t);
 
 #endif  //MTP_H
